@@ -16,7 +16,7 @@ onload = function() {
     //change background color of unread and change new notifications number to zero
     function markRead() {
         for (let i = 0; i < newNot.length; i++) {
-            newNot[i].style.background = "#fff";
+            newNot[i].classList.remove("notifications__new");
             notNumber.innerText = '0';
         }
     }
