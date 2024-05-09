@@ -130,6 +130,7 @@
     .notifications__p--group {
         font-weight: 800;
         color: hsl(219, 85%, 26%);
+        cursor: pointer;
     }
 
     .notifications__message-wrap {
