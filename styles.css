@@ -1,0 +1,247 @@
+    .attribution { font-size: 11px; text-align: center; position: relative; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+
+    body {
+        margin: 0;
+    }
+
+    * {
+        font-size: 10px;
+    }
+
+    @font-face {
+        font-family: 'Plus Jakarta Sans';
+        font-style: normal;
+        font-weight: 200 800;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/plusjakartasans/v8/LDIoaomQNQcsA88c7O9yZ4KMCoOg4Ko20yw.woff2) format('woff2');
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+      }
+
+    .notifications__main {
+        width: 100%;
+        height: 100vh;
+        background-color: hsl(210, 60%, 98%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .notifications__cont {
+        width: 750px;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        background-color: #fff;
+        border-radius: 20px;
+        box-shadow: 0px 10px 20px 10px hsla(211, 68%, 94%, 0.5);
+        font-family: 'Plus Jakarta Sans';
+    }
+
+    .notifications__inner {
+        width: 90%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .notifications__header {
+        width: 100%;
+        height: 10rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .notifications__h1-wrap {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .notifications__h1 {
+        font-size: 2.6rem;
+        color: hsl(224, 21%, 14%);
+    }
+
+    .notifications__number {
+        font-size: 1.6rem;
+        border-radius: 5px;
+        background-color: hsl(219, 85%, 26%);
+        color: #fff;
+        font-weight: 700;
+        padding: .2rem 1rem;
+    }
+
+    .notifications__p {
+        font-size: 1.6rem;
+        color: hsl(219, 12%, 42%);
+        font-weight: 500;
+        margin-bottom: .5rem;
+    }
+
+    .notifications__p--read {
+        cursor: pointer;
+        transition: all 100ms;
+    }
+
+    .notifications__p--read:hover {
+        color: hsl(219, 85%, 26%);
+        transition: all 100ms;
+    }
+
+    .notifications__p--name {
+        font-weight: 800;
+        color: hsl(224, 21%, 14%);
+        padding-right: .5rem;
+        transition: color 100ms;
+        cursor: pointer;
+    }
+
+    .notifications__p--name:hover {
+        color: hsl(219, 85%, 26%);
+        transition: color 100ms;
+    }
+
+    .notifications__p--post {
+        font-weight: 800;
+        color: hsl(219, 12%, 42%);
+        padding-left: .5rem;
+        transition: color 100ms;
+        cursor: pointer;
+    }
+
+    .notifications__p--text {
+        padding-bottom: 1rem;
+    }
+
+    .notifications__p--post:hover {
+        color: hsl(219, 85%, 26%);
+        transition: color 100ms;
+    }
+
+    .notifications__p--time {
+        color: hsl(219, 14%, 63%);
+        margin-top: 0;
+    }
+
+    .notifications__p--group {
+        font-weight: 800;
+        color: hsl(219, 85%, 26%);
+    }
+
+    .notifications__message-wrap {
+        width: 100%;
+        /*height: 8rem;*/
+        height: auto;
+        border-radius: 5px;
+        margin-bottom: 1.2rem;
+        display: flex;
+        align-items: center;
+    }
+
+    .notifications__message-wrap--text {
+        margin-bottom: 30px;
+    }
+
+    .notifications__new {
+        background-color: rgb(246, 250, 253);
+        box-shadow: 0px 0px 2px 0px hsla(219, 12%, 42%, 0.2);
+    }
+
+    .notifications__wrap-icon {
+        height: 60%;
+        display: flex;
+        align-self:flex-start;
+        justify-content: center;
+        margin-left: 1.6rem;
+        margin-top: 1.5rem;
+    }
+
+    .notifications__icon {
+        height: 4.5rem;
+    }
+
+    .notifications__wrap-text {
+        margin-left: 1.8rem;
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+    }
+
+    .notifications__text-top {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+
+    .notifications__img {
+        height: 4.5rem;
+        transform: translateY(50%);
+        margin-right: 1rem;
+    }
+
+    .notifications__unread {
+        width: .8rem;
+        height: .8rem;
+        border-radius: 50%;
+        background-color: hsl(1, 90%, 64%);
+        display: inline-block;
+        margin-left: .2rem;
+    }
+
+    .notifications__text-bottom {
+        /*margin-top: -3rem;*/
+        display: flex;
+        align-items: flex-end;
+    }
+
+    .notifications__message-text {
+        border: solid hsla(219, 14%, 63%, 0.3) 1px;
+        border-radius: 5px;
+        box-sizing: border-box;
+        padding-inline: 2rem;
+        width: 98%;
+        margin-top: 1rem;
+        cursor: pointer;
+        transition: all 100ms;
+    }
+
+    .notifications__message-text:hover {
+        background-color: hsl(211, 68%, 94%);
+        transition: all 300ms;
+    }
+
+    @media screen and (max-width: 750px) {
+        .notifications__cont {
+            width: 100%;
+        }
+
+        .notifications__main {
+            height: auto;
+        }
+    }
+
+    @media screen and (max-width: 559px) {
+        .notifications__p {
+            font-size: 1.4rem;
+        }
+
+        .notifications__h1 {
+            font-size: 2.4rem;
+        }
+
+        .notifications__inner {
+            width: 94%;
+        }
+
+        .notifications__img {
+            margin-right: 0;
+            padding-inline: 1rem;
+        }
+
+    }
+
+
