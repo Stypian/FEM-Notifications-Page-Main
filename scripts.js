@@ -20,9 +20,9 @@ onload = function() {
        for (let i = 0; i < notWrap.length; i++) {
         if (notWrap[i].classList.contains("notifications__new")) {
             notWrap[i].classList.remove("notifications__new");
-            notNumber.innerText = '0';
         }
        }
+       notNumber.innerText = '0';
     }
     
     readNot.addEventListener("click", function() {
