@@ -1,6 +1,7 @@
 onload = function() {
 
   const markAsRead = () => {
+    const notWrap = document.querySelectorAll(".notifications__message-wrap");
     const readNot = document.querySelector(".notifications__p--read");
     const notStatus = document.querySelectorAll(".notifications__status");
     const notNumber = document.querySelector(".notifications__number");
